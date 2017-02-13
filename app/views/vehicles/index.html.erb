@@ -1,0 +1,30 @@
+<h1>Chicago Towed Vehicles</h1>
+
+<table>
+  <tr>
+    <th>Tow Date</th>
+    <th>Make</th>
+    <th>Style</th>
+    <th>Model</th>
+    <th>Color</th>
+    <th>Plate</th>
+    <th>State</th>
+    <th>Towed to Address</th>
+    <th>Tow Facility Phone</th>
+    <th>Inventory Number</th>
+  </tr>
+<% @vehicles.each do |vehicle| %>
+  <tr>
+    <td><%= vehicle ["tow_date"] %></td>
+    <td><%= vehicle ["make"] %></td>
+    <td><%= vehicle ["style"] %>e</td>
+    <td><%= vehicle ["model"] %></td>
+    <td><%= vehicle ["color"] %></td>
+    <td><%= vehicle ["plate"] %></td>
+    <td><%= vehicle ["state"] %></td>
+    <td><%= vehicle ["towed_to_address"] %></td>
+    <td><%= vehicle ["tow_facility_phone"] %></td>
+    <td><%= vehicle ["inventory_number"] %></td>
+  </tr>
+<% end %>
+</table>
